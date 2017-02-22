@@ -7,19 +7,16 @@
 	<body>
 		<div id="gameContainer">
 			<div id="clickArea">
-				<div id="clickBox" 
-					onmousedown="mDown('clickBox')" 
-					onmouseup="mUp('clickBox')" 
+				<div id="clickBox"
+					onmousedown="mDown('clickBox')"
+					onmouseup="mUp('clickBox')"
 					onclick="addPoints(clickLog,clickObj.clickValue)"
 				>Click Me</div>
 			</div>
 			<div id="infoArea">
 				<h3>Click Information</h3>
+				<h3 id="display">score: 0</h3>
 				<table>
-					<tr>
-						<td>score</td>
-						<td id="display"></td>
-					</tr>
 					<tr>
 						<td>points/click</td>
 						<td id="ppc"></td>
