@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>pink click</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<div id="gameContainer">
+			<div id="clickArea">
+				<div id="clickBox" 
+					onmousedown="mDown('clickBox')" 
+					onmouseup="mUp('clickBox')" 
+					onclick="addPoints(clickLog,clickObj.clickValue)"
+				>Click Me</div>
+			</div>
+			<div id="infoArea">
+				<h3>Click Information</h3>
+				<table>
+					<tr>
+						<td>score</td>
+						<td id="display"></td>
+					</tr>
+					<tr>
+						<td>points/click</td>
+						<td id="ppc"></td>
+					</tr>
+					<tr>
+						<td>clicks/sec</td>
+						<td id="cps"></td>
+					</tr>
+				</table>
+			</div>
+			<div id="shopArea">
+				<div id="shopTitle">
+					<h1>Clicker Shop</h1>
+				</div>
+				<div id="shopTable">
+					<table>
+						<tr>
+							<td>click multiplier</td>
+							<td id="multi" onmousedown="mDown('multi')" onmouseup="mUp('multi')">not for sale</td>
+						</tr>
+						<tr>
+							<td>auto clicker</td>
+							<td id="auto" onmousedown="mDown('auto')" onmouseup="mUp('auto')">not for sale</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="JS/script.js"></script>
+	</body>
+</html>
